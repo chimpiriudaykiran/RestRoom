@@ -28,12 +28,14 @@
         "language" : "Language",
         "signout" : "Sign Out",
         "return" : "Return",
-        "textsize": "Text Size"
+        "textsize": "Text Size",
+        "TextSettings": "Text Settings"
     },
     "addrestroom": {
         "title": "Submit a Restroom",
         "backbtn": "Back to Dashboard",
         "name": "Name:",
+        "address": "Address",
         "street": "Street:",
         "city": "City:",
         "state": "State:",
@@ -66,12 +68,14 @@
     },
     "addreviews" : {
         "addreview": "Add Review",
-        "name": "Name:",
-        "cleanliness": "Cleanliness:",
-        "amenities": "Amenities:",
-        "accessibility": "Accessibility:",
-        "description": "Description:",
+        "name": "Name",
+        "cleanliness": "Cleanliness",
+        "amenities": "Amenities",
+        "accessibility": "Accessibility",
+        "description": "Description",
         "add": "Add",
-        "image": "Image:"
+        "image": "Image",
+        "title": "Add Review",
+        "close": "Close"
     }
 }

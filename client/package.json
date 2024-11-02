@@ -17,12 +17,15 @@
     "@types/firebase": "^3.2.1",
     "@types/googlemaps": "^3.43.3",
     "axios": "^1.6.7",
+    "bootstrap": "^5.3.3",
     "csbbust": "1.0.1",
     "firebase": "^10.9.0",
     "i18next": "^23.10.1",
     "i18next-browser-languagedetector": "^7.2.0",
     "loader-utils": "3.2.1",
+    "particlesjs": "^2.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^18.2.0",
     "react-i18next": "^14.1.0",
     "react-router-dom": "^6.22.3",
@@ -56,5 +59,4 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
-  
 }

@@ -28,12 +28,14 @@
         "language" : "لغة",
         "signout" : "خروج",
         "return" : "يعود",
-        "textsize": "حجم الخط"
+        "textsize": "حجم الخط",
+        "TextSettings": "إعدادات النص"
     },
     "addrestroom": {
         "title": "إرسال مرحاض",
         "backbtn": "العودة إلى لوحة القيادة",
         "name": "اسم:",
+        "address": "عنوان:",
         "street": "شارع:",
         "city": "مدينة:",
         "state": "ولاية:",
@@ -67,11 +69,11 @@
     "addreviews" : {
         "addreview": "إنشاء مراجعة",
         "name": "اسم:",
-        "cleanliness": "النظافة:",
-        "amenities": "وسائل الراحة:",
-        "accessibility": "إمكانية الوصول:",
-        "description": "وصف:",
+        "cleanliness": "النظافة",
+        "amenities": "وسائل الراحة",
+        "accessibility": "إمكانية الوصول",
+        "description": "وصف",
         "add": "يخلق",
-        "image": "صورة:"
+        "image": "صورة"
     }
 }

@@ -28,12 +28,14 @@
         "language" : "Idioma",
         "signout" : "Desconectar",
         "return" : "Regresar",
-        "textsize": "Tamaño del Texto"
+        "textsize": "Tamaño del Texto",
+        "TextSettings": "Configuración de texto"
     },
     "addrestroom": {
         "title": "Enviar un Baño",
         "backbtn": "Back to Dashboard",
         "name": "Nombre:",
+        "address": "Dirección:",
         "street": "Calle:",
         "city": "Ciudad:",
         "state": "Estado:",
@@ -66,12 +68,12 @@
     },
     "addreviews" : {
         "addreview": "Agregar una Opinión",
-        "name": "Nombre:",
-        "cleanliness": "Limpieza:",
-        "amenities": "Comodidades:",
-        "accessibility": "Accesibilidad:",
-        "description": "Descripción:",
+        "name": "Nombre",
+        "cleanliness": "Limpieza",
+        "amenities": "Comodidades",
+        "accessibility": "Accesibilidad",
+        "description": "Descripción",
         "add": "Agregar",
-        "image": "Imagen:"
+        "image": "Imagen"
     }
 }

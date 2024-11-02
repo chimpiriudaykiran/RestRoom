@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./Homepage.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaTix-YpKD6GHuumhE0s-XXkzOgKQpC5U&libraries=places,geometry"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="language-selector">
+            <!-- Language selector component here -->
+        </div>
+        <div class="welcome-container">
+            <h1>Landing Title</h1>
+            <h1>Landing Description</h1>
+            <div class="search-bar-container">
+                <input
+                    id="searchInput"
+                    type="text"
+                    placeholder="Search here..."
+                    class="search-input"
+                />
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="location-button">
+                    <i class="fas fa-crosshairs"></i>
+                </button>
+            </div>
+            <button class="add-restroom-button">Add Restroom</button>
+            <div class="image-container">
+                <img
+                    src="/assets/testing.png"
+                    alt="Restroom Sign"
+                    class="restroom-image"
+                />
+            </div>
+        </div>
+        <footer class="footer">Made with ❤️ by Team Hex</footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+
+            // Initialize Google Maps Places Autocomplete
+            const autocomplete = new google.maps.places.Autocomplete(searchInput);
+
+            autocomplete.addListener('place_changed', function() {
+                const place = autocomplete.getPlace();
+                if (place.geometry) {
+                    console.log("Selected address:", place.formatted_address); // For debugging
+                    window.location.href = `/dashboard?address=${encodeURIComponent(place.formatted_address)}`;
+                }
+            });
+
+            // Event listeners for buttons
+            document.querySelector('.search-button').addEventListener('click', function() {
+                const searchQuery = searchInput.value.trim();
+                if (searchQuery) {
+                    window.location.href = `/dashboard?address=${encodeURIComponent(searchQuery)}`;
+                }
+            });
+
+            document.querySelector('.location-button').addEventListener('click', function() {
+                window.location.href = "/dashboard?useLocation=true";
+            });
+
+            document.querySelector('.add-restroom-button').addEventListener('click', function() {
+                window.location.href = "/add-restroom";
+            });
+
+            // Handle enter key for search input
+            searchInput.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    const searchQuery = searchInput.value.trim();
+                    if (searchQuery) {
+                        window.location.href = `/dashboard?address=${encodeURIComponent(searchQuery)}`;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

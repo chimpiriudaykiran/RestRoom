@@ -1,12 +1,7 @@
-.pageAdd{
-  height: auto;
-  background: linear-gradient(0, #ffffff, #1654ac, #5d99dd);
-}
+
 .add-restroom-container {
-  max-width: 600px;
   margin: auto;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   background-color: #fff;
 }
 
@@ -16,9 +11,10 @@
 }
 
 .add-restroom-form {
-  max-width: 900px; /* Adjust the width as needed */
-  margin: 20px auto;
+  max-width: 700px; /* Adjust the width as needed */
+  margin: 5px auto;
   padding: 20px;
+  border-radius: 1%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow to your form */
 }
 

@@ -1,0 +1,191 @@
+
+.visuallyhidden{
+    position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+  }
+  .product-review-stars label:after{
+      content: "★";
+      color: inherit;
+      -webkit-transform: scale(4);
+      position: absolute;
+      z-index: 4;
+      left: 0px;
+      transition: all .4s;
+      opacity: 0;
+      color: inherit;
+      visibility: hidden;
+     
+  }
+  
+  .product-review-stars input:checked + label:after{
+      visibility: visible;
+      -webkit-transform: scale(1);
+      opacity: 1;
+  }
+  
+  .product-review-stars  {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+  }
+  
+  .product-review-stars label{
+      font-family: "icomoon";
+      font-size: 2em;
+      position: relative;
+      cursor: pointer;
+      color: #1b222499;
+  }
+  .product-review-stars input:checked ~ label:before{
+      opacity: 1;
+  }
+  
+  
+  .product-review-stars input + label:before{
+      content: "\2605";
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      transition: opacity .3s ease-in-out, color .3s ease-in-out;
+      backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -ms-backface-visibility:hidden;
+  }
+  
+  .accessibility input + label:hover:before,
+  .accessibility input + label:hover ~ label:before
+  {
+      opacity: 1;
+  }
+  .accessibility input + label:nth-of-type(1):after,
+  .accessibility input + label:nth-of-type(1):before,
+  .accessibility input +  label:nth-of-type(1):hover:before,
+  .accessibility input + label:nth-of-type(1):hover ~ label:before,
+  .accessibility input:nth-of-type(1):checked ~ label:before{
+      color: #2ecc71;
+  }
+  .accessibility input + label:nth-of-type(2):after,
+  .accessibility input + label:nth-of-type(2):before,
+  .accessibility input + label:nth-of-type(2):hover:before,
+  .accessibility input + label:nth-of-type(2):hover ~ label:before,
+  .accessibility input:nth-of-type(2):checked ~ label:before{
+      color: #f1c40f;
+  }
+  .accessibility input + label:nth-of-type(3):after,
+  .accessibility input + label:nth-of-type(3):before,
+  .accessibility input + label:nth-of-type(3):hover:before,
+  .accessibility input + label:nth-of-type(3):hover ~ label:before,
+  .accessibility input:nth-of-type(3):checked ~ label:before{
+      color: #F39C12;
+  }
+  .accessibility input + label:nth-of-type(4):after,
+  .accessibility input + label:nth-of-type(4):before,
+  .accessibility input + label:nth-of-type(4):hover:before,
+  .accessibility input + label:nth-of-type(4):hover ~ label:before,
+  .accessibility input:nth-of-type(4):checked ~ label:before{
+      color: #e74c3c;
+  }
+  
+  .accessibility input + label:nth-of-type(5):after,
+  .accessibility input + label:nth-of-type(5):before,
+  .accessibility label:nth-of-type(5):hover:before,
+  .accessibility input:nth-of-type(5):checked ~ label:before{
+      color: #d35400;
+  }
+  
+  .accessibility label:nth-of-type(5):hover:before{
+      color: #d35400 !important;
+  }
+  
+
+  .amenities input + label:hover:before,
+  .amenities input + label:hover ~ label:before
+  {
+      opacity: 1;
+  }
+  .amenities input + label:nth-of-type(1):after,
+  .amenities input + label:nth-of-type(1):before,
+  .amenities input +  label:nth-of-type(1):hover:before,
+  .amenities input + label:nth-of-type(1):hover ~ label:before,
+  .amenities input:nth-of-type(1):checked ~ label:before{
+      color: #2ecc71;
+  }
+  .amenities input + label:nth-of-type(2):after,
+  .amenities input + label:nth-of-type(2):before,
+  .amenities input + label:nth-of-type(2):hover:before,
+  .amenities input + label:nth-of-type(2):hover ~ label:before,
+  .amenities input:nth-of-type(2):checked ~ label:before{
+      color: #f1c40f;
+  }
+  .amenities input + label:nth-of-type(3):after,
+  .amenities input + label:nth-of-type(3):before,
+  .amenities input + label:nth-of-type(3):hover:before,
+  .amenities input + label:nth-of-type(3):hover ~ label:before,
+  .amenities input:nth-of-type(3):checked ~ label:before{
+      color: #F39C12;
+  }
+  .amenities input + label:nth-of-type(4):after,
+  .amenities input + label:nth-of-type(4):before,
+  .amenities input + label:nth-of-type(4):hover:before,
+  .amenities input + label:nth-of-type(4):hover ~ label:before,
+  .amenities input:nth-of-type(4):checked ~ label:before{
+      color: #e74c3c;
+  }
+  
+  .amenities input + label:nth-of-type(5):after,
+  .amenities input + label:nth-of-type(5):before,
+  .amenities label:nth-of-type(5):hover:before,
+  .amenities input:nth-of-type(5):checked ~ label:before{
+      color: #d35400;
+  }
+  
+  .amenities label:nth-of-type(5):hover:before{
+      color: #d35400 !important;
+  }
+  
+
+  .cleanliness input + label:hover:before,
+  .cleanliness input + label:hover ~ label:before
+  {
+      opacity: 1;
+  }
+  .cleanliness input + label:nth-of-type(1):after,
+  .cleanliness input + label:nth-of-type(1):before,
+  .cleanliness input +  label:nth-of-type(1):hover:before,
+  .cleanliness input + label:nth-of-type(1):hover ~ label:before,
+  .cleanliness input:nth-of-type(1):checked ~ label:before{
+      color: #2ecc71;
+  }
+  .cleanliness input + label:nth-of-type(2):after,
+  .cleanliness input + label:nth-of-type(2):before,
+  .cleanliness input + label:nth-of-type(2):hover:before,
+  .cleanliness input + label:nth-of-type(2):hover ~ label:before,
+  .cleanliness input:nth-of-type(2):checked ~ label:before{
+      color: #f1c40f;
+  }
+  .cleanliness input + label:nth-of-type(3):after,
+  .cleanliness input + label:nth-of-type(3):before,
+  .cleanliness input + label:nth-of-type(3):hover:before,
+  .cleanliness input + label:nth-of-type(3):hover ~ label:before,
+  .cleanliness input:nth-of-type(3):checked ~ label:before{
+      color: #F39C12;
+  }
+  .cleanliness input + label:nth-of-type(4):after,
+  .cleanliness input + label:nth-of-type(4):before,
+  .cleanliness input + label:nth-of-type(4):hover:before,
+  .cleanliness input + label:nth-of-type(4):hover ~ label:before,
+  .cleanliness input:nth-of-type(4):checked ~ label:before{
+      color: #e74c3c;
+  }
+  
+  .cleanliness input + label:nth-of-type(5):after,
+  .cleanliness input + label:nth-of-type(5):before,
+  .cleanliness label:nth-of-type(5):hover:before,
+  .cleanliness input:nth-of-type(5):checked ~ label:before{
+      color: #d35400;
+  }
+  
+  .cleanliness label:nth-of-type(5):hover:before{
+      color: #d35400 !important;
+  }
+  

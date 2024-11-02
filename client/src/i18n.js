@@ -9,7 +9,7 @@ import global_ar from './Translations/ar/global.json';
 
 i18n.use(LanguageDetector).use(initReactI18next).init({
     debug: true,
-    fallbackLng: "en",
+    fallbackLng: "en-US",
     returnObjects: true,
     resources: {
         en: {

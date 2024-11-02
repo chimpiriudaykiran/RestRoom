@@ -5,6 +5,9 @@ import App from './App';
 import './i18n.js';
 import i18n from "i18next";
 import { I18nextProvider } from 'react-i18next';
+import './bootstrap.min.css';
+//import App from "./Components/Homepage/Homepage.tsx";
+//import App from "./Components/Dashboard/dashboard.tsx";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

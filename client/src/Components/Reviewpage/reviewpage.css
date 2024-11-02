@@ -5,7 +5,7 @@
 
 .page-wrapper {
   /* Optionally, apply gradient background to a wrapper container */
-  background: linear-gradient(to bottom, rgb(42, 42, 165), #ffffff);
+  /* background: linear-gradient(to bottom, rgb(42, 42, 165), #ffffff); */
   min-height: 100vh; /* Ensure the wrapper covers the entire viewport height */
 }
 
@@ -13,7 +13,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background:  rgb(42, 42, 165);
+  background:  rgba(
+    255,
+    255,
+    255,
+    0.9
+  );
   padding: 7px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -24,7 +29,7 @@
   width: 60%;
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: navy;
   flex-grow: 1;
   margin-bottom: 10px;
 }
@@ -39,8 +44,8 @@
 }
 
 .add-review-btn:hover { 
-  background-color: #ffffff;
-  color: black;
+  background-color: #0d2d86;
+  color: white;
 }
 
 .go-back-btn {
@@ -54,14 +59,14 @@
 }
 
 .go-back-btn:hover {
-  background-color: #ffffff;
-  color: black;
+  background-color: #0d2d86;
+  color: white;
 }
 
 .add-review-dropdown {
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   padding: 10px;
-  border: 2px solid #000;
+  /* border: 2px solid #000; */
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -74,7 +79,7 @@
 
 .add-review-dropdown input {
   width: 100%;
-  padding: 8px;
+  /* padding: 8px; */
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -207,8 +212,13 @@
 }
 
 .review-bar {
-  background-color: rgb(42, 42, 165);
-  color: white;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  );
+  color: navy;
   font-size: 20px;
   font-weight: bold;
   padding: 10px 20px; /* Adjust padding as needed */
@@ -240,7 +250,7 @@
 }
 
 .route-step {
-  margin-bottom: -20px; /* Adjust the margin to reduce line space between steps */
+  /* margin-bottom: -20px; Adjust the margin to reduce line space between steps */
   font-size: 25px;
   color: #000;
 }

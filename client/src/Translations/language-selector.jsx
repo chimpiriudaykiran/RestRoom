@@ -1,8 +1,11 @@
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useTextSize } from '../TextSizeContext';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const languages = [
-    {code: "en", lang: "English"},
+    {code: "en-US", lang: "English"},
     {code: "es", lang: "Español"},
     {code: "fr", lang: "Français"},
     {code: "ar", lang: "عربي"},
@@ -10,24 +13,31 @@ const languages = [
 
 const LanguageSelector = () => {
     const {i18n} = useTranslation();
+    const { scaleFactor } = useTextSize();
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
 
-    /*useEffect(() => {
-        document.body.dir = i18n.dir()
-    }, [i18n, i18n.language]) //This code switches from LTR to RTL
-*/
-    const { scaleFactor } = useTextSize();
     return (
-        <div className="btn-container">
-            {languages.map((lng) => {
-                return (
-                    <button style={{ fontSize: `${16 * scaleFactor}px` }} className={lng.code === i18n.language ? "selected" : ""} key={lng.code} onClick={()=>changeLanguage(lng.code)}>{lng.lang}</button>
-                );
-            })}
-    </div>
-)}
+        <div className="langtrans-container">
+            <DropdownButton
+                id="dropdown-basic-button"
+                title={languages.find(lng => lng.code === i18n.language)?.lang}
+                style={{ fontSize: `${16 * scaleFactor}px` }}
+            >
+                {languages.map((lng) => (
+                    <Dropdown.Item 
+                        key={lng.code} 
+                        onClick={() => changeLanguage(lng.code)}
+                        active={lng.code === i18n.language}
+                    >
+                        {lng.lang}
+                    </Dropdown.Item>
+                ))}
+            </DropdownButton>
+        </div>
+    );
+};
 
 export default LanguageSelector;

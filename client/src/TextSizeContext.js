@@ -30,13 +30,23 @@ export const TextSizeProvider = ({ children }) => {
     });
   };
 
+  const setTextSize = (val) => {
+    console.log(val);
+    setScaleFactor(prevScale => {
+      let newScale = Math.max(val, MIN_SCALE_FACTOR); // Limit scale to minimum value
+      newScale = Math.min(newScale, MAX_SCALE_FACTOR);
+      localStorage.setItem('scaleFactor', newScale); // Save new scale factor to localStorage
+      return newScale;
+    });
+  };
+
   useEffect(() => {
     // Update scaleFactor in localStorage whenever it changes
     localStorage.setItem('scaleFactor', scaleFactor);
   }, [scaleFactor]);
 
   return (
-    <TextSizeContext.Provider value={{ scaleFactor, increaseTextSize, decreaseTextSize }}>
+    <TextSizeContext.Provider value={{ scaleFactor, increaseTextSize, decreaseTextSize, setTextSize, setScaleFactor }}>
       {children}
     </TextSizeContext.Provider>
   );

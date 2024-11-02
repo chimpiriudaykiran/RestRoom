@@ -28,12 +28,14 @@
         "language" : "Langue",
         "signout" : "Se Déconnecter",
         "return" : "Retour",
-        "textsize": "Taille du Texte"
+        "textsize": "Taille du Texte",
+        "TextSettings": "Paramètres du texte"
     },
     "addrestroom": {
         "title": "Soumettre des Toilettes",
         "backbtn": "Retour au Tableau de Bord",
         "name": "Nom:",
+        "address": "L' Allocution:",
         "street": "Rue:",
         "city": "Ville:",
         "state": "État:",
@@ -66,12 +68,12 @@
     },
     "addreviews" : {
         "addreview": "Ajouter un Commentaire",
-        "name": "Nom:",
-        "cleanliness": "Propreté:",
-        "amenities": "Commodités:",
-        "accessibility": "Accessibilité:",
-        "description": "Description:",
+        "name": "Nom",
+        "cleanliness": "Propreté",
+        "amenities": "Commodités",
+        "accessibility": "Accessibilité",
+        "description": "Description",
         "add": "Ajouter",
-        "image": "Image:"
+        "image": "Image"
     }
 }
