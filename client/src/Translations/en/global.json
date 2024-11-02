@@ -1,0 +1,77 @@
+{
+    "landing": {
+        "title": "Welcome to our Restroom Finding App!",
+        "description": "Find your next restroom here.",
+        "home": "Home",
+        "login": "Log In",
+        "signup": "Sign Up",
+        "searchbar": "Search address",
+        "addrestroom": "Add Restroom"
+    },
+    "header": {
+        "name": "Restroom Finder"
+    },
+    "dashboard": {
+        "title": "Locations",
+        "reviews": "Reviews",
+        "addPost": "Add",
+        "search": "Search",
+        "searchbar": "Location...",
+        "within": "Within",
+        "distancemetric": "miles",
+        "sortby": "Sort by ratings",
+        "ratings": "No ratings"
+    },
+    "dropdown" : {
+        "profile": "Profile",
+        "settings" : "Settings",
+        "language" : "Language",
+        "signout" : "Sign Out",
+        "return" : "Return",
+        "textsize": "Text Size"
+    },
+    "addrestroom": {
+        "title": "Submit a Restroom",
+        "backbtn": "Back to Dashboard",
+        "name": "Name:",
+        "street": "Street:",
+        "city": "City:",
+        "state": "State:",
+        "country": "Country:",
+        "accessible": "Accessible:",
+        "unisex": "Unisex:",
+        "submitbtn": "Save Restroom",
+        "changetable": "Changing Table:",
+        "directions": "Directions:",
+        "comment": "Comment:",
+        "cancel": "Cancel",
+        "option": "Select Option",
+        "yes": "Yes",
+        "no": "No",
+        "dirdesc": "Second floor in the back..., etc.",
+        "commdesc": "Have to be a paying customer..., etc."
+    },
+    "reviews": {
+        "title": "Restroom's Information",
+        "dashboard": "Dashboard",
+        "addreview": "Add Review",
+        "address": "Address:",
+        "directions":"Building directions:",
+        "comments": "Comments:",
+        "reviewtitle": "Reviews",
+        "noneavail": "No reviews available",
+        "quality": "Overall Quality:",
+        "date": "Date:",
+        "navigate": "Navigate"
+    },
+    "addreviews" : {
+        "addreview": "Add Review",
+        "name": "Name:",
+        "cleanliness": "Cleanliness:",
+        "amenities": "Amenities:",
+        "accessibility": "Accessibility:",
+        "description": "Description:",
+        "add": "Add",
+        "image": "Image:"
+    }
+}

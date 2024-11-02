@@ -1,0 +1,77 @@
+{
+    "landing": {
+        "title": "مرحبًا بك في تطبيق البحث عن الحمام!",
+        "description": "ابحث عن مرحاضك التالي هنا.",
+        "home": "الصفحة الرئيسية",
+        "login": "تسجيل الدخول",
+        "signup": "اشتراك",
+        "searchbar": "عنوان البحث",
+        "addrestroom": "إضافة مرحاض"
+    },
+    "header": {
+        "name": "مكتشف مرحاض"
+    },
+    "dashboard": {
+        "title": "المواقع",
+        "reviews": "مراجعات",
+        "addPost": "يضيف",
+        "search": "يبحث",
+        "searchbar": "موقع...",
+        "within": "أميال",
+        "distancemetric": "في حدود",
+        "sortby": "الترتيب حسب التقييمات",
+        "ratings": "بدون تقييم"
+    },
+    "dropdown" : {
+        "profile": "حساب تعريفي",
+        "settings" : "إعدادات",
+        "language" : "لغة",
+        "signout" : "خروج",
+        "return" : "يعود",
+        "textsize": "حجم الخط"
+    },
+    "addrestroom": {
+        "title": "إرسال مرحاض",
+        "backbtn": "العودة إلى لوحة القيادة",
+        "name": "اسم:",
+        "street": "شارع:",
+        "city": "مدينة:",
+        "state": "ولاية:",
+        "country": "دولة:",
+        "accessible": "يمكن الوصول:",
+        "unisex": "للجنسين:",
+        "submitbtn": "حفظ مرحاض",
+        "changetable": "تغيير الجدول:",
+        "directions": "الاتجاهات:",
+        "comment": "تعليق:",
+        "cancel": "يلغي",
+        "option": "حدد الخيار",
+        "yes": "نعم",
+        "no": "لا",
+        "dirdesc": "الطابق الثاني في الخلف...، الخ.",
+        "commdesc": "يجب أن تكون عميلاً يدفع...، إلخ."
+    },
+    "reviews": {
+        "title": "معلومات الحمام",
+        "dashboard": "لوحة القيادة",
+        "addreview": "إنشاء مراجعة",
+        "address": "عنوان:",
+        "directions":"اتجاهات البناء:",
+        "comments": "تعليقات:",
+        "reviewtitle": "التعليقات",
+        "noneavail": "لا توجد تعليقات متاحة",
+        "quality": "الجودة الشاملة:",
+        "date": "تاريخ:",
+        "navigate": "التنقل"
+    },
+    "addreviews" : {
+        "addreview": "إنشاء مراجعة",
+        "name": "اسم:",
+        "cleanliness": "النظافة:",
+        "amenities": "وسائل الراحة:",
+        "accessibility": "إمكانية الوصول:",
+        "description": "وصف:",
+        "add": "يخلق",
+        "image": "صورة:"
+    }
+}

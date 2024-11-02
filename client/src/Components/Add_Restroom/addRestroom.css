@@ -1,0 +1,94 @@
+.pageAdd{
+  height: auto;
+  background: linear-gradient(0, #ffffff, #1654ac, #5d99dd);
+}
+.add-restroom-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.add-restroom-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-restroom-form {
+  max-width: 900px; /* Adjust the width as needed */
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow to your form */
+}
+
+.add-restroom-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-restroom-form label input[type="text"],
+.add-restroom-form label textarea,
+.add-restroom-form label select {
+  width: calc(100% - 20px);
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-restroom-buttons {
+  text-align: center;
+}
+
+.add-restroom-form button {
+  padding: 10px 20px;
+  margin-left: 10px; /* Adds space between buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-restroom-buttons button:hover {
+  background-color: #0924c0;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 1024px) {
+  .add-restroom-container {
+    padding: 10px;
+    .add-restroom-form input[type="text"],
+    .add-restroom-form select,
+    .add-restroom-form textarea {
+      max-width: 750px; /* Set a max-width for larger display */
+    }
+  }
+
+  .add-restroom-buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.form-actions {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.form-actions button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #070abb;
+  color: white;
+  cursor: pointer;
+}
+
+.form-actions button[type="button"] {
+  background-color: #f10404;
+}
+
+.form-actions button:hover {
+  opacity: 0.9;
+}

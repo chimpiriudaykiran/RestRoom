@@ -1,0 +1,324 @@
+.review-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-wrapper {
+  /* Optionally, apply gradient background to a wrapper container */
+  background: linear-gradient(to bottom, rgb(42, 42, 165), #ffffff);
+  min-height: 100vh; /* Ensure the wrapper covers the entire viewport height */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:  rgb(42, 42, 165);
+  padding: 7px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.review-header {
+  text-align: center;
+  width: 60%;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.add-review-btn {
+  background-color: #1039a8;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-review-btn:hover { 
+  background-color: #ffffff;
+  color: black;
+}
+
+.go-back-btn {
+  text-decoration: none; /* Remove underline */
+  background-color: #1039a8; /* Red color for the "go back" button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-back-btn:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.add-review-dropdown {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.add-review-dropdown label {
+  display: block;
+  margin-top: 10px;
+}
+
+.add-review-dropdown input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.add-review-dropdown button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-review-dropdown button:hover {
+  background-color: #309c42;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.review {
+  border: 1px solid #ccc; /* Add border around each review */
+  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+  padding: 20px; /* Add padding inside each review */
+  margin-bottom: 20px; /* Add margin between reviews */
+  background-color: white;
+
+}
+
+.overall-quality {
+  font-size: 18px; /* Adjust font size */
+  color: #333; /* Adjust font color */
+}
+
+.customer-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cleanliness,
+.amenities,
+.accessibility,
+/*.overall-quality,*/
+.description,
+.date {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.photo {
+  margin-top: 10px;
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.date {
+  font-style: italic;
+  color: #666;
+}
+
+.light-red {
+  background-color: #ffe6e6; /* Light red */
+}
+
+.light-green {
+  background-color: #e6ffe6; /* Light green */
+}
+
+.star-rating {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.star-rating span::before {
+  content: "\2605"; /* Unicode character for star */
+}
+
+/* New star color classes */
+.one-star {
+  color: red; /* Red for 1 or 2 stars */
+}
+
+.three-star {
+  color: orange; /* Orange for 3 stars */
+}
+
+.four-star,
+.five-star {
+  color: green; /* Green for 4 or 5 stars */
+}
+
+.place-name-container {
+  display: flex;
+  justify-content: center;
+}
+
+.place-name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(42, 42, 165); /* Set the text color to white */
+}
+.place-details {
+  text-align: center;
+  color: rgb(42, 42, 165);
+}
+
+.place-info {
+  margin-bottom: 20px;
+}
+
+.place-address,
+.place-directions,
+.place-comments {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.place-comments {
+  margin-top: 20px;
+}
+
+.review-bar {
+  background-color: rgb(42, 42, 165);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin-bottom: 20px;
+  border-radius: 10px; /* Set border-radius to make it a circular rectangle */
+}
+
+.place-info-container {
+  background-color: white;
+  border-radius: 10px; /* Adjust border-radius for a circular rectangle */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Adjust border-radius as needed */
+}
+
+.route-steps-container {
+  text-align: left; /* Center-align the steps to the right */
+}
+
+.route-step {
+  margin-bottom: -20px; /* Adjust the margin to reduce line space between steps */
+  font-size: 25px;
+  color: #000;
+}
+
+.review-page .map-directions .map{
+  height: inherit;
+  width: auto;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.review-page .map-directions .directions{
+  width: 450px;
+  min-height: inherit;
+  background-color: #f8f7f7; 
+  display: block;
+  border-radius: 10px;
+  margin-left: 5px;
+  overflow-y: auto;
+  text-align: left;
+  padding: 0px 10px;
+}
+
+.review-page .map-directions{
+  gap: 5px;
+  display: flex;
+  height: 500px;
+  flex-direction: row;
+}
+
+/* Custom scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Custom scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #b5b5b5;
+  border-radius: 10px;
+}
+
+/* Custom scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+/* Optional: Hide scrollbar when not hovering */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Show scrollbar on hover */
+::-webkit-scrollbar:hover {
+  display: block;
+}
+
+
+@media(max-width: 1000px)
+{
+  .review-page .map-directions {
+    flex-direction: column;
+    height: fit-content;
+  }
+  
+  .review-page .map-directions .map {
+    border-radius: 10px;
+    height: 500px;
+    flex: none;
+  }
+  
+  .review-page .map-directions .directions {
+    background-color: #f8f7f7;
+    border-radius: 10px;
+    overflow-y: auto;
+    width: auto;
+    text-align: left;
+    padding: 0px 10px;
+    height: 160px;
+  }
+}

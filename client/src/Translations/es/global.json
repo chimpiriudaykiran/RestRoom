@@ -1,0 +1,77 @@
+{
+    "landing": {
+        "title": "¡Bienvenidos a nuestra aplicación de búsqueda de baños!",
+        "description": "Encuentra tu próximo baño aquí.",
+        "home": "Página Principal",
+        "login": "Acceso",
+        "signup": "Inscribirse",
+        "searchbar": "Buscar dirección",
+        "addrestroom": "Agregar Baño"
+    },
+    "header": {
+        "name": "Buscador de Baños"
+    },
+    "dashboard": {
+        "title": "Ubicaciones",
+        "reviews": "Opiniones",
+        "addPost": "Agregar",
+        "search": "Buscar",
+        "searchbar": "Ubicación...",
+        "within": "Dentro de",
+        "distancemetric": "millas",
+        "sortby": "Ordenar por calificaciones",
+        "ratings": "No hay calificaciones"
+    },
+    "dropdown" : {
+        "profile": "Perfil",
+        "settings" : "Ajustes",
+        "language" : "Idioma",
+        "signout" : "Desconectar",
+        "return" : "Regresar",
+        "textsize": "Tamaño del Texto"
+    },
+    "addrestroom": {
+        "title": "Enviar un Baño",
+        "backbtn": "Back to Dashboard",
+        "name": "Nombre:",
+        "street": "Calle:",
+        "city": "Ciudad:",
+        "state": "Estado:",
+        "country": "País:",
+        "accessible": "Accesible:",
+        "unisex": "Unisexo:",
+        "submitbtn": "Guardar Baño",
+        "changetable": "Mesa de Cambiar Pañales:",
+        "directions": "Direcciones:",
+        "comment": "Commentarios:",
+        "cancel": "Cancelar",
+        "option": "Seleccionar Opción",
+        "yes": "Si",
+        "no": "No",
+        "dirdesc": "Segundo piso atrás..., etc.",
+        "commdesc": "Tiene que ser un cliente de pago..., etc."
+    },
+    "reviews": {
+        "title": "Información del baño",
+        "dashboard": "Panel",
+        "addreview": "Agregar una opinión",
+        "address": "Dirección:",
+        "directions":"Direcciones al edificio:",
+        "comments": "Commentarios:",
+        "reviewtitle": "Opiniones",
+        "noneavail": "No hay opiniones disponibles",
+        "quality": "Calidad General:",
+        "date": "Fecha:",
+        "navigate": "Navegar"
+    },
+    "addreviews" : {
+        "addreview": "Agregar una Opinión",
+        "name": "Nombre:",
+        "cleanliness": "Limpieza:",
+        "amenities": "Comodidades:",
+        "accessibility": "Accesibilidad:",
+        "description": "Descripción:",
+        "add": "Agregar",
+        "image": "Imagen:"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "landing": {
+        "title": "Bienvenue sur notre application de recherche de toilettes!",
+        "description": "Trouvez vos prochaines toilettes ici.",
+        "home": "Page d'accueil",
+        "login": "Se connecter",
+        "signup": "S'inscrire",
+        "searchbar": "Rechercher une adresse",
+        "addrestroom": "Ajouter des toilettes"
+    },
+    "header": {
+        "name": "Recherche de toilettes"
+    },
+    "dashboard": {
+        "title": "Emplacements",
+        "reviews": "Commentaires",
+        "addPost": "Ajouter",
+        "search": "Recherche",
+        "searchbar": "Emplacement...",
+        "within": "Dans un rayon de",
+        "distancemetric": "milles",
+        "sortby": "Trier par notes",
+        "ratings": "Pas de notes"
+    },
+    "dropdown" : {
+        "profile": "Profil",
+        "settings" : "Paramètres",
+        "language" : "Langue",
+        "signout" : "Se Déconnecter",
+        "return" : "Retour",
+        "textsize": "Taille du Texte"
+    },
+    "addrestroom": {
+        "title": "Soumettre des Toilettes",
+        "backbtn": "Retour au Tableau de Bord",
+        "name": "Nom:",
+        "street": "Rue:",
+        "city": "Ville:",
+        "state": "État:",
+        "country": "Pays:",
+        "accessible": "Accessible:",
+        "unisex": "Unisexe:",
+        "submitbtn": "Enregistrer les Toilettes",
+        "changetable": "Table à Langer:",
+        "directions": "Directions:",
+        "comment": "Commentaire:",
+        "cancel": "Annuler",
+        "option": "Sélectionnez une Option",
+        "yes": "Oui",
+        "no": "Non",
+        "dirdesc": "Deuxième étage à l'arrière..., etc.",
+        "commdesc": "Il faut être un client payant..., etc."
+    },
+    "reviews": {
+        "title": "Informations sur les toilettes",
+        "dashboard": "Tableau de bord",
+        "addreview": "Ajouter un commentaire",
+        "address": "L' Allocution:",
+        "directions":"Directions vers le bâtiment:",
+        "comments": "Commentaires:",
+        "reviewtitle": "Commentaires",
+        "noneavail": "Aucun avis disponible",
+        "quality": "Qualité Générale:",
+        "date": "La Date:",
+        "navigate": "Naviguer"
+    },
+    "addreviews" : {
+        "addreview": "Ajouter un Commentaire",
+        "name": "Nom:",
+        "cleanliness": "Propreté:",
+        "amenities": "Commodités:",
+        "accessibility": "Accessibilité:",
+        "description": "Description:",
+        "add": "Ajouter",
+        "image": "Image:"
+    }
+}
