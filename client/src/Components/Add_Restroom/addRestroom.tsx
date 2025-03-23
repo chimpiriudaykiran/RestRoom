@@ -58,7 +58,7 @@ function AddRestroom() {
     e.preventDefault();
     try {
       const { address } = formState;
-      const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=AIzaSyCIkDyu_9cY97ciYB5H6tdjOTPwpNMec90`;
+      const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM`;
       const response = await fetch(geocodeUrl);
       const data = await response.json();
 
@@ -84,7 +84,7 @@ function AddRestroom() {
 
   useEffect(() => {
     const loader = new Loader({
-      apiKey: 'AIzaSyCIkDyu_9cY97ciYB5H6tdjOTPwpNMec90',
+      apiKey: 'AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM',
       version: 'weekly',
       libraries: ['places', 'geometry'],
     });

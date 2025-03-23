@@ -326,7 +326,7 @@ function SearchLocation() {
           const response = await fetch(
             `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
               address
-            )}&key=AIzaSyCIkDyu_9cY97ciYB5H6tdjOTPwpNMec90`
+            )}&key=AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM`
           );
 
           if (response.ok) {
@@ -455,7 +455,7 @@ function SearchLocation() {
   useEffect(() => {
     //load map
     const loader = new Loader({
-      apiKey: "AIzaSyCIkDyu_9cY97ciYB5H6tdjOTPwpNMec90",
+      apiKey: "AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM",
       version: "weekly",
       libraries: ["places", "geometry"],
     });
@@ -626,13 +626,13 @@ function SearchLocation() {
           response = await fetch(
             `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
               globalLocation
-            )}&key=AIzaSyCIkDyu_9cY97ciYB5H6tdjOTPwpNMec90`
+            )}&key=AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM`
           );
         } else {
           response = await fetch(
             `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
               location
-            )}&key=AIzaSyCIkDyu_9cY97ciYB5H6tdjOTPwpNMec90`
+            )}&key=AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM`
           );
         }
 

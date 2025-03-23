@@ -38,7 +38,7 @@ function Homepage() {
 
   useEffect(() => {
     const loader = new Loader({
-      apiKey: 'AIzaSyCIkDyu_9cY97ciYB5H6tdjOTPwpNMec90',
+      apiKey: 'AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM',
       version: 'weekly',
       libraries: ['places', 'geometry'],
     });
