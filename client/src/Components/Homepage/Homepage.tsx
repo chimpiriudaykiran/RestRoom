@@ -38,7 +38,7 @@ function Homepage() {
 
   useEffect(() => {
     const loader = new Loader({
-      apiKey: 'AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM',
+      apiKey: `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`,
       version: 'weekly',
       libraries: ['places', 'geometry'],
     });

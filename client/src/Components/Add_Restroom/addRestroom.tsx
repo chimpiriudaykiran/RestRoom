@@ -31,6 +31,8 @@ function AddRestroom() {
 
   const [states, setStates] = useState([]);
   const [countries, setCountries] = useState([]);
+  
+  const REACT_APP_GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
   useEffect(() => {
     // Fetch US states
@@ -58,7 +60,7 @@ function AddRestroom() {
     e.preventDefault();
     try {
       const { address } = formState;
-      const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM`;
+      const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${REACT_APP_GOOGLE_MAPS_API_KEY}`;
       const response = await fetch(geocodeUrl);
       const data = await response.json();
 
@@ -84,7 +86,7 @@ function AddRestroom() {
 
   useEffect(() => {
     const loader = new Loader({
-      apiKey: 'AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM',
+      apiKey: `${REACT_APP_GOOGLE_MAPS_API_KEY}`,
       version: 'weekly',
       libraries: ['places', 'geometry'],
     });

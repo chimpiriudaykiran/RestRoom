@@ -5,8 +5,9 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebase_api_key = process.env.FIREBASE_API_KEY;
 const firebaseConfig = {
-  apiKey: "AIzaSyBzj6UD3C-2bvB178WiW1rJsyJ279lBYnw",
+  apiKey: firebase_api_key,
   authDomain: "restroomlocator-eb091.firebaseapp.com",
   projectId: "restroomlocator-eb091",
   storageBucket: "restroomlocator-eb091.appspot.com",

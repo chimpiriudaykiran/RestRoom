@@ -18,6 +18,8 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
+const REACT_APP_GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
 //store all essential info for nearby locations
 let nearbyLocations = [] as {
   id: string;
@@ -322,11 +324,12 @@ function SearchLocation() {
           // Concatenate street, city, state, and country to form complete address
           const address = `${street}, ${city}, ${state}, ${country}`;
 
+          
           // Perform geocoding to convert address to coordinates
           const response = await fetch(
             `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
               address
-            )}&key=AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM`
+            )}&key=${REACT_APP_GOOGLE_MAPS_API_KEY}`
           );
 
           if (response.ok) {
@@ -455,7 +458,7 @@ function SearchLocation() {
   useEffect(() => {
     //load map
     const loader = new Loader({
-      apiKey: "AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM",
+      apiKey: `${REACT_APP_GOOGLE_MAPS_API_KEY}`,
       version: "weekly",
       libraries: ["places", "geometry"],
     });
@@ -626,13 +629,13 @@ function SearchLocation() {
           response = await fetch(
             `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
               globalLocation
-            )}&key=AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM`
+            )}&key=${REACT_APP_GOOGLE_MAPS_API_KEY}`
           );
         } else {
           response = await fetch(
             `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
               location
-            )}&key=AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM`
+            )}&key=${REACT_APP_GOOGLE_MAPS_API_KEY}`
           );
         }
 

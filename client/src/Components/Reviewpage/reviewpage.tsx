@@ -204,7 +204,7 @@ function ReviewPage() {
   useEffect(() => {
     //load map into page
     const loader = new Loader({
-      apiKey: 'AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM',
+      apiKey: `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`,
       version: 'weekly',
       libraries: ['places', 'geometry'], // You can add "directions" here for routes
     });
@@ -248,7 +248,7 @@ function ReviewPage() {
 
       // Perform geocoding to convert address to coordinates
       const response = await fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=AIzaSyBl4DjPd_GM9redJ-bjzPWEGJOtcPKVjrM`
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`
       );
 
       if (response.ok) {
